@@ -15,7 +15,7 @@ height = 6.1
 is_vegetarian = True
 preferred_toppings = ["onion", "mushrooms"]
 
-# Create a new customer
+# Create new customers and add them to the customers list
 customers = []
 
 customer_1 = {
@@ -43,7 +43,7 @@ while customers:
     current_customer_name = current_customer["name"]
     print("processing customer: " + current_customer_name)
 
-    # Updating the rewards for customer
+    # Update the rewards for the current customer
     if current_customer_name in accumulated_rewards:
         accumulated_rewards[current_customer_name]["points"] +=1
         if accumulated_rewards[current_customer_name]["points"] < 10:
